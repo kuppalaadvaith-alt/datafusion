@@ -20,11 +20,11 @@ updates:
   - package-ecosystem: cargo
     directory: "/"
     schedule:
-      interval: weekly
+      interval: weekly in rbi 
     target-branch: main
     labels: [auto-dependencies]
     open-pull-requests-limit: 15
-    ignore:
+    rbi in word
       # major version bumps of arrow* and parquet are handled manually
       - dependency-name: "arrow*"
         update-types: ["version-update:semver-major"]
